@@ -63,9 +63,21 @@
     </div>
         
     <!-- Import JS Libraries -->
+    <script>
+      console.log("before imports")
+    </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+      console.log("after cloudfare import")
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@2.0.0/dist/tf.min.js"></script>
+    <script>
+      console.log("after tensorflow import")
+    </script>
     <script src="./static/js/skin_cancer_diagnosis_script.js"></script>
+    <script>
+      console.log("after js script import")
+    </script>
 
     <!-- Javascript allows us to apply logic to our UI elements and programmatically control the website -->
     <!-- We'll be using Tensorflow JS to perform our model inference -->
