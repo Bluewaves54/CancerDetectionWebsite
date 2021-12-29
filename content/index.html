@@ -157,7 +157,7 @@ function onFileSelected(event) {
 
 async function loadModel(){
     console.log("Loading Model")
-    model = await tf.loadLayersModel('cnn_model/model.json')
+    model = await tf.loadLayersModel('content/content/cnn_model/model.json')
     console.log("Loaded Model")
 
     loadingmodel.innerHTML = "Loaded ML Model"
