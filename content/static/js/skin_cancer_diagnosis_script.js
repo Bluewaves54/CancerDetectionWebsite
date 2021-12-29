@@ -1,3 +1,5 @@
+console.log('script entered')
+
 var model = null
 
 var classes = ['Actinic Keratoses', 'Basal Cell Carcinoma', 'Benign Keratoses', 'Dermatofibroma', 'Melanoma', 'Melanocytic Nevus', 'Vascular Lesion']
