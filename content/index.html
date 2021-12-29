@@ -159,7 +159,7 @@ console.log('Current directory: ', process.cwd())
 
 async function loadModel(){
     console.log("Loading Model")
-    model = await tf.loadLayersModel('../../content/cnn_model/model.json')
+    model = await tf.loadLayersModel('./content/cnn_model/model.json')
     console.log("Loaded Model")
 
     loadingmodel.innerHTML = "Loaded ML Model"
