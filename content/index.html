@@ -20,13 +20,13 @@
   body {
     font-family: DejaVu Sans Mono, monospace;
   }
-  </style>
+</style>
 <body style="background-color:#a9dce2">
 
     <!-- Title Bar -->
     <nav style="background-color: #4e66a9">
       <div class="nav-wrapper">
-        <a href="#" class="brand-logo">Skin Cancer Diagnosis</a>
+        <a href="#" class="brand-logo" style="font-size: 50;">Skin Cancer Diagnosis</a>
       </div>
       <!-- <a href='#credits' style="color: #000">Credits</a> -->
     </nav>
@@ -35,7 +35,7 @@
     <div style="padding:5%;">
 
         <!-- Loading Bar -->
-        <h6 id="loadingmodel">Loading ML Model</h6>
+        <h6 id="loadingmodel" style="font-size: 30;">Loading ML Model...</h6>
         <div id="progressbar" class="progress" style="background-color: #fff">
             <div class="indeterminate" style="background-color: #000"></div>
         </div>
@@ -43,7 +43,7 @@
         <!-- Image File Input -->
         <div class="file-field input-field">
             <div class="waves-effect waves-light btn">
-              <span>Select Image</span>
+              <span style="font-size: 30; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif">Select Image</span>
               <input type="file" accept="image/*" onchange="onFileSelected(event)">
             </div>
             <div class="file-path-wrapper">
@@ -60,7 +60,7 @@
         <br/>
         
         <!-- Button to Perform Classification -->
-        <a onclick="predict()" class="waves-effect waves-light btn">Classify Image</a>
+        <a onclick="predict()" class="waves-effect waves-light btn" style="font-size: 30; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif">Classify Image</a>
         
         <!-- Text Fields for the Prediction and the Probability -->
         <h5>Prediction</h5>
@@ -108,7 +108,7 @@ var classes = ['Actinic Keratoses', 'Basal Cell Carcinoma', 'Benign Keratoses', 
 
 // Function to perform prediction on our Tensorflow JS Model
 
-async function predict(){
+async function predict() {
 
     try {
         if(imgtag.src == ""){
