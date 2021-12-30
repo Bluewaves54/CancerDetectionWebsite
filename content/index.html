@@ -21,12 +21,12 @@
     font-family: DejaVu Sans Mono, monospace;
   }
 </style>
-<body style="background-color:#a9dce2">
+<body style="background-color:#617bc9">
 
     <!-- Title Bar -->
-    <nav style="background-color: #4e66a9">
+    <nav style="background-color: #091f92">
       <div class="nav-wrapper">
-        <a href="#" class="brand-logo" style="font-size: 50;">Skin Cancer Diagnosis</a>
+        <a href="#" class="brand-logo" style="font-size: 50; color: #a9dce2;">Skin Cancer Diagnosis</a>
       </div>
       <!-- <a href='#credits' style="color: #000">Credits</a> -->
     </nav>
@@ -35,15 +35,15 @@
     <div style="padding:5%;">
 
         <!-- Loading Bar -->
-        <h6 id="loadingmodel" style="font-size: 30;">Loading ML Model...</h6>
-        <div id="progressbar" class="progress" style="background-color: #fff">
-            <div class="indeterminate" style="background-color: #000"></div>
+        <h6 id="loadingmodel" style="font-size: 30; color: #fff">Loading ML Model...</h6>
+        <div id="progressbar" class="progress" style="background-color: #4b0082">
+            <div class="indeterminate" style="background-color: #fff"></div>
         </div>
 
         <!-- Image File Input -->
         <div class="file-field input-field">
-            <div class="waves-effect waves-light btn">
-              <span style="font-size: 30; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif">Select Image</span>
+            <div class="waves-effect waves-light btn" style="background-color: #5884ae">
+              <span style="font-size: 30; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">Select Image</span>
               <input type="file" accept="image/*" onchange="onFileSelected(event)">
             </div>
             <div class="file-path-wrapper">
@@ -60,10 +60,16 @@
         <br/>
         
         <!-- Button to Perform Classification -->
-        <a onclick="predict()" class="waves-effect waves-light btn" style="font-size: 30; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif">Classify Image</a>
+        <a
+          onclick="predict()"
+          class="waves-effect waves-light btn"
+          style="
+            font-size: 30;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            background-color: #5884ae">Classify Image</a>
         
         <!-- Text Fields for the Prediction and the Probability -->
-        <h5>Prediction</h5>
+        <h5 style='color: #fff; font-size: 30'>Prediction</h5>
         <b><p id="prediction"></p></b>
         <p id="probability"></p>
 
