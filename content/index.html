@@ -35,7 +35,7 @@
     <div style="padding:5%;">
 
         <!-- Loading Bar -->
-        <h6 id="loadingmodel" style="font-size: 30; color: #fff">Loading ML Model...</h6>
+        <h6 id="loadingmodel" style="font-size: 30; color: #fff">Loading Machine Learning Model...</h6>
         <div id="progressbar" class="progress" style="background-color: #4b0082">
             <div class="indeterminate" style="background-color: #fff"></div>
         </div>
@@ -173,7 +173,7 @@ async function loadModel(){
     model = await tf.loadLayersModel('content/content/cnn_model/model.json')
     console.log("Loaded Model")
 
-    loadingmodel.innerHTML = "Loaded ML Model"
+    loadingmodel.innerHTML = "Loaded Machine Learning Model"
     progressbar.style.display = "none"
 }
 
